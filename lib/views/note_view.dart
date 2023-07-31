@@ -12,6 +12,8 @@ class NoteView extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16)),
               context: context,
               builder: (context) {
                 // malhash build lazem t3mlha build
@@ -23,4 +25,3 @@ class NoteView extends StatelessWidget {
     );
   }
 }
-
